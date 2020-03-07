@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    height: 1000px;
+}
+/* start Header,Footer style */
+.Header,.Footer{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    padding: 15px 0px;
+}
+.Header h2,.Footer h2{
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-top: 25px;
+}
+/* end other Header,Footer style */
+/* start latest News */
+.item a{
+    position: relative;
+}
+.item .myImage{
+border-radius: 6px;}
+.item a,.item a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.item .description span{
+position: absolute;
+left: 0px;
+top: 110px;
+padding:7px 20px;
+color:#FFF;
+background-color: #218838de;
+border-radius: 3px;
+font-family: cursive;
+font-size: 22px;
+}
+.item .description .title{
+    position: absolute;
+    top: 155px;
+    padding:12px 20px;
+    left: 0px;
+    border-radius: 3px;
+    font-family: cursive;
+    background-color: #524f4f7d;
+    margin-top: 10px;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* end latest News style */
+/* start other style */
+.otherNewsHeader{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 30px;
+}
+ .lead{
+    color:gray;
+    font-family: cursive;
+    font-weight: bold;
+    width: 40%;
+}
+.otherNewsHeader .icons{
+    margin: 20px 4px;
+}
+.fa-thumbs-up:before,.fa-thumbs-down:before   {
+    margin: 10px;
+}
+/* end other style */
+/* start gallery style */
+.otherGalleriesHeader {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 30px;
+}
+
+.slider-item img{
+    height: 600px;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    border-radius: 3px;
+}
+.slider-item .artistName{
+position: absolute;
+top:12px;
+padding:7px 22px;
+color:#FFF;
+background-color: #218838de;
+border-radius: 3px;
+font-family: cursive;
+font-size: 25px;
+}
+.all a{
+position: relative;
+}
+/* start card news style */
+.card .icons  {
+    margin: 10px 4px;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/* end card news style */
