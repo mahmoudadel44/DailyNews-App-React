@@ -29,7 +29,9 @@ const showGallery = ({ gallery }) => {
 
                 )
             })}
+            
         </Slider>
+     
         </div>
       )
   }

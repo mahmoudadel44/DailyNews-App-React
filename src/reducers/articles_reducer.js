@@ -3,7 +3,8 @@ import {
   GET_OTHER_NEWS,
   GET_LATEST_GALLERY,
   GET_SELECTED_NEWS,
-  CLEAR_SELECTED_NEWS
+  CLEAR_SELECTED_NEWS,
+  HANDLE_LIKES_ARTICLES
 } from "../actions/types";
 export default function(state = {}, action) {
   switch (action.type) {
@@ -17,6 +18,8 @@ export default function(state = {}, action) {
       return { ...state, selected: action.payload };
     case CLEAR_SELECTED_NEWS:
       return { ...state, selected: action.payload };
+      case HANDLE_LIKES_ARTICLES:
+        return{...state,selected:[action.payload]}
     default:
       return state;
   }

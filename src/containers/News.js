@@ -6,7 +6,6 @@ import SelectedNews from '../components/home/selectednews'
  class News extends Component {
      componentWillMount(){
          this.props.selectedNews(this.props.match.params.id)
-         window.scrollTo(0, 0);
      }
      componentWillUnmount(){
         this.props.clearSelectedNews()

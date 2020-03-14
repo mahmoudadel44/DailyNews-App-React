@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux'
 import articles from './articles_reducer'
-import galleries from './galleries_reducer'
+import gallery from './galleries_reducer'
 const rootReducer=combineReducers({
 articles,
-galleries
+gallery
 })
 
 export default rootReducer;

@@ -17,7 +17,7 @@ import Gallery from '../components/home/gallery'
 <div>
                 <LatestNews latest={this.props.articles.latest} />
                 <OtherNews other={this.props.articles.other}/>
-                <Gallery  gallery={this.props.galleries.gallery}/>
+                <Gallery  gallery={this.props.galleries.latestGallery}/>
             </div>
         )
     
@@ -29,7 +29,7 @@ function mapStateToProps(state){
     // console.log('gallery',state)
     return{
         articles:state.articles,
-        galleries:state.galleries
+        galleries:state.gallery
     }
 }
 

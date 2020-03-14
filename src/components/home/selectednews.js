@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Counter from '../../containers/LikesContainer'
 const showSelectedNews = ({ select }) => {
   if (select) {
     return select.map(item => {
       return (
-        <div className="card m-auto">
+        <div className="m-auto" key={item.id}>
+        <div className="card">
           <div className="card-body">
             <div className="icons">
               <span style={{ color: "#03A9F4", margin: "140px" }}>
@@ -72,6 +74,14 @@ const showSelectedNews = ({ select }) => {
             </h2>
           </Link>
         </div>
+                 <Counter
+                 type='HANDLE_LIKES_ARTICLES'
+                 section="articles"
+                 articleId={item.id}
+                  likes={item.likes[0]}
+                 dislikes={item.likes[1]}
+                 />
+                 </div>
       );
     });
   }
@@ -79,7 +89,10 @@ const showSelectedNews = ({ select }) => {
 const selectednews = props => {
   return (
     <div className="container">
-      <div className="row">{showSelectedNews(props)}</div>
+      <div className="row">
+        {showSelectedNews(props)}
+        </div>
+
     </div>
   );
 };

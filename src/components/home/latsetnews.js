@@ -26,7 +26,9 @@ const allLatest = ({ latest }) => {
 const LatsetNews = props => {
   return (
     <div className="container-fluid">
-      <div className="row">{allLatest(props)}</div>
+      <div className="row">
+        {allLatest(props)}
+        </div>
     </div>
   );
 };
